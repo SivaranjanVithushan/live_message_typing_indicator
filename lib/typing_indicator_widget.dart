@@ -5,7 +5,8 @@ class TypingIndicatorWidget extends StatelessWidget {
   final bool isTyping;
   final String typingUser;
 
-  TypingIndicatorWidget({required this.isTyping, required this.typingUser});
+  const TypingIndicatorWidget(
+      {super.key, required this.isTyping, required this.typingUser});
 
   @override
   Widget build(BuildContext context) {
@@ -14,9 +15,9 @@ class TypingIndicatorWidget extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: Text(
               '$typingUser is typing...',
-              style: TextStyle(fontStyle: FontStyle.italic),
+              style: const TextStyle(fontStyle: FontStyle.italic),
             ),
           )
-        : SizedBox.shrink();
+        : const SizedBox.shrink();
   }
 }

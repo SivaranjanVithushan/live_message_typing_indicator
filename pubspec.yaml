@@ -8,8 +8,10 @@ environment:
 
 dependencies:
   ably_flutter: ^1.2.32
+  bloc: ^8.1.4
   flutter:
     sdk: flutter
+  flutter_bloc: ^8.1.6
 
 dev_dependencies:
   flutter_test:
